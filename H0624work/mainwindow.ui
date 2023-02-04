@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1384</width>
+    <height>974</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图像视频处理</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,6,2">
+    <item>
+     <widget class="QDockWidget" name="dockWidget_left">
+      <property name="windowTitle">
+       <string>图片处理</string>
+      </property>
+      <widget class="QWidget" name="dockWidgetContents_4">
+       <widget class="QPushButton" name="left_btn">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/image/left.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>81</width>
+          <height>81</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="right_btn">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>20</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/image/right.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="h_btn">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/image/H.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="v_btn">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>120</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/image/V.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="res_btn">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>230</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/image/reset.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="del_btn">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>220</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/image/image/del.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>24</x>
+          <y>330</y>
+          <width>181</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPushButton" name="gray_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>灰度化</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Fiter_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>均值滤波</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Gamma_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>伽马变换</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="edge_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>边缘检测</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="die_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>边缘检测+原图</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="qian_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>手写签名</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>590</y>
+          <width>231</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,0">
+         <item row="3" column="0" colspan="2">
+          <widget class="QSlider" name="horizontalSlider_G">
+           <property name="styleSheet">
+            <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: green;
+        height:4px;
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:white;
+        height:4px;
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(:/myImage/images/slide.png);
+        margin: -8 0px;
+    }
+
+</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>B值：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>G值：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>R值：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QSlider" name="horizontalSlider_R">
+           <property name="styleSheet">
+            <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: red;
+        height:4px;
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:white;
+        height:4px;
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(:/myImage/images/slide.png);
+        margin: -8 0px;
+    }
+
+</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="2">
+          <widget class="QSlider" name="horizontalSlider_B">
+           <property name="styleSheet">
+            <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: blue;
+        height:4px;
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:white;
+        height:4px;
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(:/myImage/images/slide.png);
+        margin: -8 0px;
+    }
+
+</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>570</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>色彩通道调整</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="image">
+       <attribute name="title">
+        <string>图像</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="9,1">
+        <item>
+         <widget class="QLabel" name="image_label">
+          <property name="styleSheet">
+           <string notr="true">border-width: 5px;
+border-style: solid;
+border-color: rgb(0, 0, 0)</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout" columnstretch="1,1,8">
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_liang">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>50</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="0" colspan="3">
+           <widget class="QSlider" name="horizontalSlider_3">
+            <property name="styleSheet">
+             <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: rgb(223, 223, 223);
+        height:4px;
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:black;
+        height:4px;
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(:/myImage/images/slide.png);
+        margin: -8 0px;
+    }
+</string>
+            </property>
+            <property name="minimum">
+             <number>-300</number>
+            </property>
+            <property name="maximum">
+             <number>300</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_bao">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>饱和度：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>二值化：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QSlider" name="horizontalSlider_liang">
+            <property name="styleSheet">
+             <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: rgb(223, 223, 223);
+        height:4px;
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:black;
+        height:4px;
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(:/myImage/images/slide.png);
+        margin: -8 0px;
+    }
+</string>
+            </property>
+            <property name="minimum">
+             <number>-300</number>
+            </property>
+            <property name="maximum">
+             <number>300</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>亮度：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="3">
+           <widget class="QSlider" name="horizontalSlider_2">
+            <property name="styleSheet">
+             <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: rgb(223, 223, 223);
+        height:4px;
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:black;
+        height:4px;
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(:/myImage/images/slide.png);
+        margin: -8 0px;
+    }
+</string>
+            </property>
+            <property name="minimum">
+             <number>-300</number>
+            </property>
+            <property name="maximum">
+             <number>300</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>对比度：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="label_er">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0" colspan="3">
+           <widget class="QSlider" name="horizontalSlider_4">
+            <property name="styleSheet">
+             <string notr="true">QSlider::add-page:Horizontal
+     {     
+        background-color: rgb(223, 223, 223);
+        height:4px;
+     }
+     QSlider::sub-page:Horizontal 
+    {
+        background-color:black;
+        height:4px;
+     }
+    QSlider::groove:Horizontal 
+    {
+        background:transparent;
+        height:10px;
+		border-radius: 5px;
+    }
+    QSlider::handle:Horizontal 
+    {
+        height: 20px;
+        width:20px;
+        border-image: url(:/myImage/images/slide.png);
+        margin: -8 0px;
+    }
+</string>
+            </property>
+            <property name="maximum">
+             <number>255</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_dui">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="video">
+       <attribute name="title">
+        <string>视频</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="9">
+        <item>
+         <widget class="QLabel" name="video_label">
+          <property name="styleSheet">
+           <string notr="true">border-width: 5px;
+border-style: solid;
+border-color: rgb(0, 0, 0)
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDockWidget" name="dockWidget_right">
+      <property name="windowTitle">
+       <string>视频处理</string>
+      </property>
+      <widget class="QWidget" name="dockWidgetContents_5">
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>290</y>
+          <width>261</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QPushButton" name="e_btn">
+           <property name="text">
+            <string>边缘检测</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="hui_btn">
+           <property name="text">
+            <string>灰度化</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="res_btn_v">
+           <property name="text">
+            <string>重置</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>390</y>
+          <width>261</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4" columnstretch="9,1" columnminimumwidth="9,1">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="er_btn">
+           <property name="text">
+            <string>二值化</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="er_spinBox">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+           <property name="value">
+            <number>84</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1384</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="action_I"/>
+    <addaction name="action_V"/>
+    <addaction name="action_S"/>
+    <addaction name="action_A"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="action_Z"/>
+   </widget>
+   <widget class="QMenu" name="menu_L">
+    <property name="title">
+     <string>语言(&amp;L)</string>
+    </property>
+    <addaction name="action_C"/>
+    <addaction name="action_K"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_L"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_I"/>
+   <addaction name="action_V"/>
+   <addaction name="action_S"/>
+   <addaction name="action_A"/>
+   <addaction name="action_Z"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_I">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/image/filenew.png</normaloff>:/image/image/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开图像(&amp;I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_V">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/image/fileopen.png</normaloff>:/image/image/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开视频(&amp;V)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/image/filesave.png</normaloff>:/image/image/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存当前(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/image/filesaveas.png</normaloff>:/image/image/filesaveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存所有(&amp;A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Z">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/image/back.png</normaloff>:/image/image/back.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤回(&amp;Z)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="text">
+    <string>中文(&amp;C)</string>
+   </property>
+  </action>
+  <action name="action_K">
+   <property name="text">
+    <string>英语(&amp;K)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

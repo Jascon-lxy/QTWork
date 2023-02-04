@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/filenew.png</file>
+        <file>image/fileopen.png</file>
+        <file>image/filesave.png</file>
+        <file>image/filesaveas.png</file>
+        <file>image/find.png</file>
+        <file>image/help.png</file>
+        <file>image/zoom-in.png</file>
+        <file>image/back.png</file>
+        <file>image/right.png</file>
+        <file>image/left.png</file>
+        <file>image/V.png</file>
+        <file>image/H.png</file>
+        <file>image/reset.png</file>
+        <file>image/del.png</file>
+    </qresource>
+</RCC>
